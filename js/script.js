@@ -21,7 +21,7 @@ serachButton.addEventListener("click", () => {
     spinner.classList.remove("d-none");
     searchInput.value = ""; //clearing search input value.
     // loading data here
-    loadData(`http://openlibrary.org/search.json?q=${searchText}`);
+    loadData(`https://openlibrary.org/search.json?q=${searchText}`);
   }
 });
 
