@@ -15,5 +15,55 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <h1 class="text-center mt-3">
+        Search Your Favourite <span class="text-primary"> Book!</span>
+      </h1>
+    </header>
+    <!-- Main Section -->
+    <main class="container mt-4">
+      <!-- search input section -->
+      <section>
+        <div class="input-group mb-3 w-75 mx-auto">
+          <input
+            id="search-input"
+            type="text"
+            class="form-control"
+            placeholder="Book Name.."
+          />
+          <button
+            id="search-button"
+            class="btn btn-outline-secondary"
+            type="button"
+          >
+            Search
+          </button>
+        </div>
+      </section>
+      <!-- Search Result Output Section -->
+      <section>
+        <!-- spinner -->
+        <div id="spinner" class="text-center d-none">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <!-- Error Message -->
+        <div id="error" class="alert alert-danger d-none" role="alert"></div>
+        <!-- serch result number -->
+        <div
+          id="success"
+          class="alert alert-secondary d-none mb-3 text-end"
+        ></div>
+        <!-- Result Output Main Container -->
+        <div id="book-container" class="row row-cols-1 row-cols-md-5 g-3">
+          <!-- output will be shown here -->
+        </div>
+      </section>
+    </main>
+    <!-- script file connect here -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
